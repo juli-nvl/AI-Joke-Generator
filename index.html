@@ -6,12 +6,13 @@
     <title>Joke Generator</title>
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
       <header><h1>Welcome to my AI Joke Generator!</h1></header>
       <main>
-        <form>
+        <form id="joke-input">
           <input
             type="text"
             placeholder="What kind of joke do you want?"
@@ -20,7 +21,7 @@
           />
           <input type="submit" value="generate!" class="submit-button" />
         </form>
-        <div class="joke">The joke will appear here</div>
+        <div class="joke" id="joke"></div>
       </main>
       <footer>
         This project was coded by
