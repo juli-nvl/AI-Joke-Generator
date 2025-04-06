@@ -16,7 +16,7 @@ function getJoke(event) {
 
   let jokeElement = document.querySelector("#joke");
   jokeElement.classList.remove("hidden");
-  jokeElement.innerHTML = `<div class="generating">⏳ Generating a joke about "${promptInstructions.value}" for you.</div>`;
+  jokeElement.innerHTML = `<div class="generating">⏳ Generating a joke about "${promptInstructions.value}" for you</div>`;
 
   axios.get(apiUrl).then(generateJoke);
 }
